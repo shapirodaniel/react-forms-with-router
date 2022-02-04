@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLayout } from '../layout';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const { NavContainer, Logo, LinksContainer } = NavLayout;
 
@@ -16,9 +16,9 @@ export default function Nav() {
       <Logo>React Forms Demo</Logo>
       <LinksContainer>
         {links.map(({ id, name, to }) => (
-          <Link key={id} to={to}>
+          <NavLink key={id} to={to}>
             {name}
-          </Link>
+          </NavLink>
         ))}
       </LinksContainer>
     </NavContainer>

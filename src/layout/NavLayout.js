@@ -17,6 +17,15 @@ const LinksContainer = styled.div`
   & * {
     margin-left: 10px;
   }
+  & .active {
+    color: blue;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  & * {
+    color: black;
+  }
 `;
 
 export default {

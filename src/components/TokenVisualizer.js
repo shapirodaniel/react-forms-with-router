@@ -12,6 +12,9 @@ export default function TokenVisualizer(props) {
   return (
     <pre>
       <code>{JSON.stringify(props, null, 2)}</code>
+      <button onClick={() => props.history.push('/edit')}>
+        Take Me to New!
+      </button>
     </pre>
   );
 }
