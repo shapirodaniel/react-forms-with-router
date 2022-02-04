@@ -9,10 +9,10 @@ const links = [
   { id: 2, name: 'new', to: '/new' },
 ];
 
-export default function Nav(props) {
+export default function Nav() {
   return (
     <NavContainer>
-      <Logo>Stranger's Things</Logo>
+      <Logo>React Forms Demo</Logo>
       <LinksContainer>
         {links.map(({ id, name, to }) => (
           <Link key={id} to={to}>
