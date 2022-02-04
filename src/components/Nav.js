@@ -12,7 +12,7 @@ const links = [
 export default function Nav(props) {
   return (
     <NavContainer>
-      <Logo>Stranger's Things</Logo>
+      <Logo>React Forms Demo</Logo>
       <LinksContainer>
         {links.map(({ id, name, to }) => (
           <Link key={id} to={to}>
